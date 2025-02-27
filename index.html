@@ -84,11 +84,14 @@
             </h2>
         </a>
 
-        <!-- Call Button (Now Clickable) -->
-        <a href="tel:+11234567890" class="btn btn-light btn-sm" 
-            style="font-size: 1rem; font-weight: bold; flex: 1; padding: 5px 15px; text-decoration: none;">
-            Call Us
-        </a>
+       <!-- Call Button (Now with Inline Styles for Responsiveness) -->
+<a href="tel:+11234567890" class="btn btn-light call-btn" 
+    style="font-size: 0.9rem; font-weight: bold; padding: 5px 12px; text-decoration: none;
+    @media (max-width: 992px) { font-size: 0.8rem; padding: 4px 10px; }
+    @media (max-width: 768px) { font-size: 1rem; padding: 6px 15px; }">
+    Call Us
+</a>
+
 
         <!-- Toggle Button -->
         <button type="button" class="navbar-toggler" id="navToggler"
